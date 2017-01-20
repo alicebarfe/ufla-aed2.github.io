@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Estruturas de Dados: Referência da Estrutura ListaVet</title>
+<title>Estruturas de Dados: Referência da Estrutura PilhaEnc</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -45,54 +45,39 @@
   <div class="summary">
 <a href="#pub-attribs">Campos de Dados</a>  </div>
   <div class="headertitle">
-<div class="title">Referência da Estrutura ListaVet</div>  </div>
+<div class="title">Referência da Estrutura PilhaEnc</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Declaração opaca da estrutura da lista.  
- <a href="struct_lista_vet.html#details">Mais...</a></p>
+<p>Declaração opaca da estrutura de uma pilha.  
+ <a href="struct_pilha_enc.html#details">Mais...</a></p>
 
-<p><code>#include &lt;<a class="el" href="listavet_8hpp_source.html">listavet.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="pilhaenc_8hpp_source.html">pilhaenc.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Campos de Dados</h2></td></tr>
-<tr class="memitem:aafcec7bcfc83bdf8263914a8b9ccb5ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lista_vet.html#aafcec7bcfc83bdf8263914a8b9ccb5ee">itens</a> [<a class="el" href="pilhavet_8hpp.html#ac0cf2902c27019004022f788b44d0f5e">TAM_MAX</a>]</td></tr>
-<tr class="separator:aafcec7bcfc83bdf8263914a8b9ccb5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef63ea6859a2e74309a15613a708aa05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lista_vet.html#aef63ea6859a2e74309a15613a708aa05">ultimo</a></td></tr>
-<tr class="separator:aef63ea6859a2e74309a15613a708aa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02da53de13af9d3e56500dce3a78be26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_noh.html">Noh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pilha_enc.html#a02da53de13af9d3e56500dce3a78be26">topo</a></td></tr>
+<tr class="separator:a02da53de13af9d3e56500dce3a78be26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
-<div class="textblock"><p>Declaração opaca da estrutura da lista. </p>
-<p>Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. A definição da estrutura <a class="el" href="struct_lista_vet.html" title="Declaração opaca da estrutura da lista. ">ListaVet</a> encontra-se no arquivo </p>
+<div class="textblock"><p>Declaração opaca da estrutura de uma pilha. </p>
+<p>Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. A definição da estrutura <a class="el" href="struct_pilha_enc.html" title="Declaração opaca da estrutura de uma pilha. ">PilhaEnc</a> encontra-se no arquivo </p>
 </div><h2 class="groupheader">Campos</h2>
-<a class="anchor" id="aafcec7bcfc83bdf8263914a8b9ccb5ee"></a>
+<a class="anchor" id="a02da53de13af9d3e56500dce3a78be26"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int itens[<a class="el" href="pilhavet_8hpp.html#ac0cf2902c27019004022f788b44d0f5e">TAM_MAX</a>]</td>
+          <td class="memname"><a class="el" href="struct_noh.html">Noh</a>* topo</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Vetor que armazena os elementos da lista. </p>
-
-</div>
-</div>
-<a class="anchor" id="aef63ea6859a2e74309a15613a708aa05"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ultimo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Variável que indica a próxima posição vazia da lista. </p>
+<p>É um ponteiro para o todo da pilha. </p>
 
 </div>
 </div>
 <hr/>A documentação para esta estrutura foi gerada a partir do seguinte arquivo:<ul>
-<li>eds/array/<a class="el" href="listavet_8cpp.html">listavet.cpp</a></li>
+<li>eds/encadeada/<a class="el" href="pilhaenc_8cpp.html">pilhaenc.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

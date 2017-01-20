@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Estruturas de Dados: Referência da Estrutura FilaDVet</title>
+<title>Estruturas de Dados: Referência da Estrutura Noh</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -45,69 +45,54 @@
   <div class="summary">
 <a href="#pub-attribs">Campos de Dados</a>  </div>
   <div class="headertitle">
-<div class="title">Referência da Estrutura FilaDVet</div>  </div>
+<div class="title">Referência da Estrutura Noh</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Declaração opaca da estrutura de uma fila.  
- <a href="struct_fila_d_vet.html#details">Mais...</a></p>
+<p>Declaração opaca da estrutura de um nó da pilha.  
+ <a href="struct_noh.html#details">Mais...</a></p>
 
-<p><code>#include &lt;<a class="el" href="filadvet_8hpp_source.html">filadvet.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="pilhaenc_8hpp_source.html">pilhaenc.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Campos de Dados</h2></td></tr>
-<tr class="memitem:aafcec7bcfc83bdf8263914a8b9ccb5ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fila_d_vet.html#aafcec7bcfc83bdf8263914a8b9ccb5ee">itens</a> [<a class="el" href="pilhavet_8hpp.html#ac0cf2902c27019004022f788b44d0f5e">TAM_MAX</a>]</td></tr>
-<tr class="separator:aafcec7bcfc83bdf8263914a8b9ccb5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73f53b0349bb995757a60c9c0bde3569"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fila_d_vet.html#a73f53b0349bb995757a60c9c0bde3569">inicio</a></td></tr>
-<tr class="separator:a73f53b0349bb995757a60c9c0bde3569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22be39504679a934aea082c76c95bb68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fila_d_vet.html#a22be39504679a934aea082c76c95bb68">fim</a></td></tr>
-<tr class="separator:a22be39504679a934aea082c76c95bb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e491a383d28941868b142ff9f9e886"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_noh.html#a02e491a383d28941868b142ff9f9e886">item</a></td></tr>
+<tr class="separator:a02e491a383d28941868b142ff9f9e886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98982e429415af9a4e0a628e54cdade7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_noh.html">Noh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_noh.html#a98982e429415af9a4e0a628e54cdade7">prox</a></td></tr>
+<tr class="separator:a98982e429415af9a4e0a628e54cdade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
-<div class="textblock"><p>Declaração opaca da estrutura de uma fila. </p>
-<p>Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. A definição da estrutura <a class="el" href="struct_fila_d_vet.html" title="Declaração opaca da estrutura de uma fila. ">FilaDVet</a> encontra-se no arquivo </p>
+<div class="textblock"><p>Declaração opaca da estrutura de um nó da pilha. </p>
+<p>Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. A definição da estrutura <a class="el" href="struct_noh.html" title="Declaração opaca da estrutura de um nó da pilha. ">Noh</a> encontra-se no arquivo </p>
 </div><h2 class="groupheader">Campos</h2>
-<a class="anchor" id="a22be39504679a934aea082c76c95bb68"></a>
+<a class="anchor" id="a02e491a383d28941868b142ff9f9e886"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fim</td>
+          <td class="memname">int item</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Variável que indica a próxima posição vazia da fila. </p>
+<p>Representa a informação a ser armazenada em cada nó da pilha. </p>
 
 </div>
 </div>
-<a class="anchor" id="a73f53b0349bb995757a60c9c0bde3569"></a>
+<a class="anchor" id="a98982e429415af9a4e0a628e54cdade7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int inicio</td>
+          <td class="memname"><a class="el" href="struct_noh.html">Noh</a>* prox</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Variável que indica a posição do primeiro elemento da fila. </p>
-
-</div>
-</div>
-<a class="anchor" id="aafcec7bcfc83bdf8263914a8b9ccb5ee"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int itens[<a class="el" href="pilhavet_8hpp.html#ac0cf2902c27019004022f788b44d0f5e">TAM_MAX</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Vetor que armazena os elementos da fila. </p>
+<p>É um ponteiro para o próximo nó da pilha. </p>
 
 </div>
 </div>
 <hr/>A documentação para esta estrutura foi gerada a partir do seguinte arquivo:<ul>
-<li>eds/array/<a class="el" href="filadvet_8cpp.html">filadvet.cpp</a></li>
+<li>eds/encadeada/<a class="el" href="pilhaenc_8cpp.html">pilhaenc.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
